@@ -1,7 +1,12 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
+  plugins: [
+    new MiniCssExtractPlugin()
+  ],
   entry: {
     application: './source/javascripts/site.js',
-    styles: './source/stylesheets/site.css',
+    styles: './source/stylesheets/site.css.scss',
   },
   output: {
     path: __dirname + '/.tmp/dist',
@@ -10,33 +15,21 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         exclude: /node_modules/,
         use: [
           {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
+            loader: MiniCssExtractPlugin.loader,
             options: {
-              importLoaders: 1,
-            }
+              hmr: process.env.NODE_ENV === 'development',
+            },
           },
-          {
-            loader: 'postcss-loader'
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              ident: 'postcss',
-              plugins: [
-                require('tailwindcss'),
-                require('autoprefixer'),
-              ],
-            }
-          },
+          'css-loader',
+          'postcss-loader',
+          'sass-loader',
         ]
       }
     ]
   }
 }
+
