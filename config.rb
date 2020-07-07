@@ -16,6 +16,13 @@ page '/*.txt', layout: false
 # activate livereload
 activate :livereload
 
+# activating webpacker
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d --color',
+  source: ".tmp/dist",
+  latency: 1
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
