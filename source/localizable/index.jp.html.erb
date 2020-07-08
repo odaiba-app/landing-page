@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<head>
+  <title>odaiba</title>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="images/odaiba-favicon-32x32.png"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<header>
+  <nav class="bg-transparent fixed w-full p-6 m-auto z-50">
+    <div class="container flex items-center justify-between flex-wrap">
+      <a href="#">
+        <div class="flex items-center flex-shrink-0 w-32">
+          <img src="images/odaiba-logo.svg" alt="logo">
+        </div>
+      </a>
+
+      <div class="flex items-center w-auto">
+        <div class="text-sm flex">
+          <a href="#our-cause" class="block font-semibold text-gray-900 hover:text-grey-700 mr-12">
+            きっかけ
+          </a>
+          <a href="#features" class="block font-semibold text-gray-900 hover:text-gray-700 mr-12">
+            odaibaとは
+          </a>
+          <a href="#demo" class="block font-semibold text-gray-900 hover:text-gray-700 mr-12">
+            デモ動画
+          </a>
+          <a href="#contact" class="block font-semibold text-gray-900 hover:text-gray-700 mr-8">
+            お問い合わせ
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+<body>
+
+  <!---------------------------------- TOP VIEW ---------------------------------->
+
+  <div id="top-view" class="top-view flex pt-32 p-24">
+    <div class="text w-1/2 pr-20 pt-12">
+      <div class="slogan text-5xl font-bold mb-10">
+        子どもたちの自宅学習をもっと楽しく、グループワーク中心に！
+      </div>
+      <div class="CTA">
+        <p class="text-lg font-semibold mb-4" style="color:#F88436">更新情報を受け取る↓</p>
+        <input class="rounded-full w-5/6 px-6 py-3 focus:outline-none focus:shadow-outline-none text-gray-700" type="text" placeholder="メールアドレス">
+      </div>
+    </div>
+    <div class="image w-1/2">
+      <img src="images/top-image.png" alt="自宅学習">
+    </div>
+  </div>
+
+  <!---------------------------------- OUR CAUSE ---------------------------------->
+
+  <section id="our-cause" class="our-cause my-20">
+    <h2 class="text-3xl font-extrabold text-center mb-4" style="color:#F88436">コロナで自宅学習になっている子どもたち、勉強が嫌いになってしまったかも!?</h2>
+    <hr class="border w-12 m-auto" style="border-color:#F88436">
+
+    <div class="py-4 px-20 flex">
+      <div class="w-1/3 p-8">
+        <img class="block mb-4" src="images/painpoint-1.png" alt="Hard to Focus">
+        <div class="text block text-center">
+          <h4 class="font-extrabold text-xl mb-2">1人で勉強するのって大変！</h4>
+          <p class="text-sm text-gray-700">自宅学習の現状は、ただ大量の宿題が与えられています...先生や生徒たちとの交流がなくなってしまったので、わからないことをだれに聞いたら良いのか、1人で勉強するのがもう嫌だと思う子どもたちがたくさんいます。</p>
+        </div>
+      </div>
+      <div class="w-1/3 p-8">
+        <img class="block mb-4" src="images/painpoint-2.png" alt="Social Isolation">
+        <div class="text block text-center">
+          <h4 class="font-extrabold text-xl mb-2">勉強ってただ知識を得ることじゃない！</h4>
+          <p class="text-sm text-gray-700">学校の勉強はただ知識を得ることではなく、対人関係やチームワークや感情のコントロールなどのソフトスキルは備えることもとても大事です。</p>
+        </div>
+      </div>
+      <div class="w-1/3 p-8">
+        <img class="block mb-4" src="images/painpoint-3.png" alt="Mental Health">
+        <div class="text block text-center">
+          <h4 class="font-extrabold text-xl mb-2">ストレスが溜まっている！</h4>
+          <p class="text-sm text-gray-700">家に引きこもって勉強ばかりしていると、子どもたちはイライラしたり怒ったりします。この時期に子どもたちの心の健康やメンタルの発達に深刻な影響を及ぼすかもしれません。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------------- FEATURES ---------------------------------->
+
+  <section id="features" class="features my-20">
+    <h2 class="text-4xl font-extrabold text-center mb-4" style="color:#F88436">odaibaとは?</h2>
+    <hr class="border w-12 m-auto" style="border-color:#F88436">
+
+    <div class="content py-4">
+
+      <div class="feature flex mt-8 mb-8">
+        <div class="w-1/2">
+          <div class="text pr-8 pt-12">
+            <h4 class="font-black text-3xl mb-4">ぺアプログラミングを<br/>ベースとした学習アプローチ</h4>
+            <hr class="border w-20 mb-6" style="border-color:#F88436">
+            <p class="text-base text-gray-700 leading-relaxed pr-16">生徒たちはランダムにグループに分かれ、一人ひとり順番で回答を記入し、力を合わせて一緒に課題を完成させます。この学習アプローチにより、生徒たちは有意義なつながりを築きながら、チームワーク精神を鍛えることもできます。</p>
+          </div>
+        </div>
+        <div class="w-1/2 relative">
+          <img class="bg-shape absolute" src="images/shape-1.png" alt="shape">
+          <img class="overlay-image absolute p-12 mt-12" src="images/feature-1.png" alt="">
+        </div>
+      </div>
+
+      <div class="feature flex mt-8 mb-8">
+        <div class="w-1/2 relative">
+          <img class="bg-shape absolute" src="images/shape-2.png" alt="shape">
+          <img class="overlay-image absolute p-12 mt-12" src="images/feature-2.png" alt="">
+        </div>
+        <div class="w-1/2">
+          <div class="text pl-16 pt-16">
+            <h4 class="font-black text-3xl mb-4">リアルタイムで進捗チェック</h4>
+            <hr class="border w-20 mb-6" style="border-color:#F88436">
+            <p class="text-base text-gray-700 leading-relaxed pr-16">先生はodaibaのアプリを通して、各グループの進捗状況をリアルタイムで確認することができます。必要な時には個別のグループに参加してサポートしたりすることができます。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature flex mt-8">
+        <div class="w-1/2">
+          <div class="text pr-8 pt-12">
+            <h4 class="font-black text-3xl mb-4">ワークシートと<br/>レッスンを簡単に作成</h4>
+            <hr class="border w-20 mb-6" style="border-color:#F88436">
+            <p class="text-base text-gray-700 leading-relaxed pr-16">odaibaのアプリで様々な科目のワークシートや宿題を簡単に作成することができます。生徒のニーズに合わせてワークシートの難しさをフレキシブルに調整することが可能です。また、正解を設定することによって自動採点することもできます。</p>
+          </div>
+        </div>
+        <div class="w-1/2 relative">
+          <img class="bg-shape absolute" src="images/shape-3.png" alt="shape">
+          <img class="overlay-image absolute p-12 mt-12" src="images/feature-3.png" alt="">
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!---------------------------------- DEMO ---------------------------------->
+
+  <section id="demo" class="demo mb-20">
+    <h2 class="text-4xl font-extrabold text-center mb-4" style="color:#F88436">デモ動画を見る</h2>
+    <hr class="border w-12 m-auto mb-8" style="border-color:#F88436">
+
+    <div class="video">
+      <iframe class="m-auto" width="640" height="360" src="https://www.youtube.com/embed/YXsXco0evCA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+    </div>
+
+  </section>
+
+  <!---------------------------------- CONTACT US ---------------------------------->
+
+  <section id="contact" class="contact mt-20">
+
+    <div class="container m-auto p-12">
+      <h2 class="text-3xl text-gray-700 font-extrabold text-center mb-4">パートナーを募集中！</h2>
+      <hr class="border border-gray-700 w-12 m-auto mb-6">
+      <p class="text-center text-gray-700">パートナーになりたい方々のご連絡をお待ちしております！</p>
+
+      <div class="form mt-10">
+
+        <form class="w-full max-w-lg m-auto">
+          <div class="flex flex-wrap -mx-3 mb-2">
+            <div class="w-full md:w-1/2 px-3 mb-3 md:mb-0">
+              <input class="appearance-none block w-full bg-white text-sm text-gray-700 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="名">
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <input class="appearance-none block w-full bg-white text-sm text-gray-700 rounded-lg py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="姓">
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-2">
+            <div class="w-full px-3">
+              <input class="appearance-none block w-full bg-white text-sm text-gray-700 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" placeholder="メールアドレス">
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full px-3">
+              <textarea class="appearance-none block w-full bg-white text-sm text-gray-700 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="message" placeholder="メッセージ" rows="10" cols="30"></textarea>
+            </div>
+          </div>
+          <div class="flex flex-wrap -mx-3 mb-2">
+            <div class="w-full px-3 text-center">
+              <button class="text-sm bg-orange-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded" type="button">
+                送信
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!---------------------------------- FOOTER ---------------------------------->
+
+  <footer class="py-6 px-8">
+    <div class="flex items-center justify-between">
+      <a href="#">
+        <div class="logo block w-24">
+          <img src="images/odaiba-logo.svg" alt="logo">
+        </div>
+      </a>
+
+      <div class="social block">
+        <div class="text-sm flex">
+          <a href="#" class="block opacity-75 hover:opacity-50 mr-6 w-4">
+            <img src="images/facebook.svg" alt="facebook">
+          </a>
+          <a href="#" class="block opacity-75 hover:opacity-50 mr-6 w-4">
+            <img src="images/instagram.svg" alt="instagram">
+          </a>
+          <a href="#" class="block opacity-75 hover:opacity-50 mr-6 w-4">
+            <img src="images/twitter.svg" alt="twitter">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
