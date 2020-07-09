@@ -3,6 +3,11 @@ nav .container {
   margin: 0 auto;
 }
 
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   background-color: #fff;
   color: #333;
@@ -24,19 +29,15 @@ a {
   }
 }
 
-#top-view {
-  height: 100vh;
-}
+// #top-view {
+//   height: 100vh;
+// }
 
 .top-view {
   background-image: url(../images/top-shape.png);
   background-size: 75%;
   background-repeat: no-repeat;
   background-position: top right;
-}
-
-.welcome {
-  margin-top: 20vh;
 }
 
 .top-view .CTA input {
