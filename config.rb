@@ -7,6 +7,12 @@ end
 
 # activate localization
 activate :i18n, mount_at_root: false, langs: %w[en jp]
+# configure :build do
+#    activate :i18n,
+#       :mount_at_root => 'en',
+#       :lang_map => { :'en' => 'en', :'jp' => 'jp' },
+#       :path => '/'
+# end
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
