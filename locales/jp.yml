@@ -1,3 +1,7 @@
 jp:
   hello: "こんにちは"
-  cause: "きっかけ"
+  nav:
+    cause: "きっかけ"
+    features: "odaibaとは"
+    demo: "デモ動画"
+    contact: "お問い合わせ"
