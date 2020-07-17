@@ -11,3 +11,12 @@ en:
   cause:
     question: "How is COVID-19 affecting children’s home learning?"
     focus: "Hard to Focus"
+    focus-b: "Children are finding it difficult to complete their large amounts of homework, while not receiving the equivalent amount of interaction with teachers and other students"
+    social: "Social Isolation"
+    social-b: "Kids are sad and lonely because they cannot see their friends. They may struggle to understand their feelings and become frustrated or angry"
+    health: "Mental Health"
+    health-b: "The stress of quarantine and isolation may have serious consequences on children’s mental health and development that we do not fully realize yet"
+  features:
+    help: "How can odaiba help?"
+    programming: "Peer Programming based<br/>learning approach"
+    programming-b: "We created an app that facilitates learning using the methodology of Pair Programming. This technique is highly collaborative and proven in the tech industry. Using the same concept, students will work together to support each other on assignments while building meaningful connections."
