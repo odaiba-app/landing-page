@@ -13,29 +13,28 @@
 
 <body>
   <header>
-    <nav id="navbar" class="bg-transparent fixed w-full p-6 m-auto z-50">
+    <nav id="navbar"  class="bg-transparent fixed w-full p-6 m-auto z-50">
       <div class="container flex items-center justify-between flex-wrap">
         <a href="#">
           <div class="flex items-center flex-shrink-0 w-32">
-             <%= image_tag 'images/odaiba-logo.svg' %>
+            <img src="images/odaiba-logo.svg" alt="logo">
           </div>
         </a>
 
         <div class="flex items-center w-auto">
           <div class="text-sm flex">
             <a href="#our-cause" class="block font-semibold text-gray-900 hover:text-grey-700 mr-12">
-              きっかけ
+              <%= I18n.t('nav.cause') %>
             </a>
             <a href="#features" class="block font-semibold text-gray-900 hover:text-gray-700 mr-12">
-              odaibaとは
+              <%= I18n.t('nav.features') %>
             </a>
             <a href="#demo" class="block font-semibold text-gray-900 hover:text-gray-700 mr-12">
-              デモ動画
+              <%= I18n.t('nav.demo') %>
             </a>
             <a href="#contact" class="block font-semibold text-gray-900 hover:text-gray-700 mr-12">
-              お問い合わせ
+              <%= I18n.t('nav.contact') %>
             </a>
-            <p class="flex block font-semibold text-gray-900 mr-8" ><%= link_to 'EN', '/', :class => 'hover:text-gray-700 mr-2' %> | <%= link_to '日本語', '/jp', :class => 'hover:text-gray-700 ml-2' %></p>
           </div>
         </div>
       </div>
@@ -49,43 +48,42 @@
   <div id="top-view" class="top-view flex pt-32 p-24">
     <div class="text w-1/2 pr-20 pt-12">
       <div class="slogan text-5xl font-bold mb-10">
-        子どもたちの自宅学習をもっと楽しく、グループワーク中心に！
+        <%= I18n.t('top.slogan') %>
       </div>
       <div class="CTA">
-       <a class="typeform-share button" href="https://form.typeform.com/to/SksVjAuk" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#F9975F;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">パートナーを募集中</a>
+       <a class="typeform-share button" href="https://form.typeform.com/to/SksVjAuk" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#F9975F;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank"><%= I18n.t('top.button') %></a>
       </div>
     </div>
     <div class="image w-1/2">
-      <%= image_tag 'images/top-image.png' %>
+      <img src="images/top-image.png" alt="Home Learning">
     </div>
   </div>
 
   <!---------------------------------- OUR CAUSE ---------------------------------->
 
   <section id="our-cause" class="our-cause my-20">
-    <h2 class="text-3xl font-extrabold text-center mb-4" style="color:#F88436">コロナで自宅学習になっている子どもたち、勉強が嫌いになってしまったかも!?</h2>
+    <h2 class="text-3xl font-extrabold text-center mb-4" style="color:#F88436"><%= I18n.t('cause.question') %></h2>
     <hr class="border w-12 m-auto" style="border-color:#F88436">
-
     <div data-aos="fade-down" class="py-4 px-20 flex">
       <div class="w-1/3 p-8">
-        <%= image_tag 'images/painpoint-1.png', class: 'block mb-4', alt: "Hard to Focus" %>
+        <img class="block mb-4" src="images/painpoint-1.png" alt="Hard to Focus">
         <div class="text block text-center">
-          <h4 class="font-extrabold text-xl mb-2">1人で勉強するのって大変！</h4>
-          <p class="text-sm text-gray-700">自宅学習の現状は、ただ大量の宿題が与えられています...先生や生徒たちとの交流がなくなってしまったので、わからないことをだれに聞いたら良いのか、1人で勉強するのがもう嫌だと思う子どもたちがたくさんいます。</p>
+          <h4 class="font-extrabold text-xl mb-2"><%= I18n.t('cause.focus') %></h4>
+          <p class="text-sm text-gray-700">Children are finding it difficult to complete their large amounts of homework, while not receiving the equivalent amount of interaction with teachers and other students</p>
         </div>
       </div>
       <div class="w-1/3 p-8">
-        <%= image_tag 'images/painpoint-2.png', class: 'block mb-4', alt: "Social Isolation" %>
+        <img class="block mb-4" src="images/painpoint-2.png" alt="Social Isolation">
         <div class="text block text-center">
-          <h4 class="font-extrabold text-xl mb-2">勉強ってただ知識を得ることじゃない！</h4>
-          <p class="text-sm text-gray-700">学校の勉強はただ知識を得ることではなく、対人関係やチームワークや感情のコントロールなどのソフトスキルは備えることもとても大事です。</p>
+          <h4 class="font-extrabold text-xl mb-2">Social Isolation</h4>
+          <p class="text-sm text-gray-700">Kids are sad and lonely because they cannot see their friends. They may struggle to understand their feelings and become frustrated or angry</p>
         </div>
       </div>
       <div class="w-1/3 p-8">
-        <%= image_tag 'images/painpoint-3.png', class: 'block mb-4', alt: "Mental Health" %>
+        <img class="block mb-4" src="images/painpoint-3.png" alt="Mental Health">
         <div class="text block text-center">
-          <h4 class="font-extrabold text-xl mb-2">ストレスが溜まっている！</h4>
-          <p class="text-sm text-gray-700">家に引きこもって勉強ばかりしていると、子どもたちはイライラしたり怒ったりします。この時期に子どもたちの心の健康やメンタルの発達に深刻な影響を及ぼすかもしれません。</p>
+          <h4 class="font-extrabold text-xl mb-2">Mental Health</h4>
+          <p class="text-sm text-gray-700">The stress of quarantine and isolation may have serious consequences on children’s mental health and development that we do not fully realize yet</p>
         </div>
       </div>
     </div>
@@ -94,7 +92,7 @@
   <!---------------------------------- FEATURES ---------------------------------->
 
   <section id="features" class="features my-20">
-    <h2 class="text-4xl font-extrabold text-center mb-4" style="color:#F88436">odaibaとは?</h2>
+    <h2 class="text-4xl font-extrabold text-center mb-4" style="color:#F88436">How can odaiba help?</h2>
     <hr class="border w-12 m-auto" style="border-color:#F88436">
 
     <div class="content py-4">
@@ -102,27 +100,28 @@
       <div data-aos="fade-down" class="feature flex mt-8 mb-8">
         <div class="w-1/2">
           <div class="text pr-8 pt-12">
-            <h4 class="font-black text-3xl mb-4">ぺアプログラミングを<br/>ベースとした学習アプローチ</h4>
+            <h4 class="font-black text-3xl mb-4">Peer Programming based<br/>learning approach</h4>
             <hr class="border w-20 mb-6" style="border-color:#F88436">
-            <p class="text-base text-gray-700 leading-relaxed pr-16">生徒たちはランダムにグループに分かれ、一人ひとり順番で回答を記入し、力を合わせて一緒に課題を完成させます。この学習アプローチにより、生徒たちは有意義なつながりを築きながら、チームワーク精神を鍛えることもできます。</p>
+            <p class="text-base text-gray-700 leading-relaxed pr-16">We created an app that facilitates learning using the methodology of Pair Programming. This technique is highly collaborative and proven in the tech industry. Using the same concept, students
+              will work together to support each other on assignments while building meaningful connections.</p>
           </div>
         </div>
         <div class="w-1/2 relative">
-          <%= image_tag 'images/shape-1.png', class: 'bg-shape absolute', alt: "shape" %>
-          <%= image_tag 'images/feature-1.png', class: 'overlay-image absolute p-12 mt-12', alt: "Mom with kids using ipad" %>
+          <img class="bg-shape absolute" src="images/shape-1.png" alt="shape">
+          <img class="overlay-image absolute p-12 mt-12" src="images/feature-1.png" alt="">
         </div>
       </div>
 
       <div data-aos="fade-down" class="feature flex mt-8 mb-8">
         <div class="w-1/2 relative">
-          <%= image_tag 'images/shape-2.png', class: 'bg-shape absolute', alt: "shape" %>
-          <%= image_tag 'images/feature-2.png', class: 'overlay-image absolute p-12 mt-12', alt: "Online lessons" %>
+          <img class="bg-shape absolute" src="images/shape-2.png" alt="shape">
+          <img class="overlay-image absolute p-12 mt-12" src="images/feature-2.png" alt="">
         </div>
         <div class="w-1/2">
           <div class="text pl-16 pt-16">
-            <h4 class="font-black text-3xl mb-4">リアルタイムで進捗チェック</h4>
+            <h4 class="font-black text-3xl mb-4">Real-time progress<br/>check-ins</h4>
             <hr class="border w-20 mb-6" style="border-color:#F88436">
-            <p class="text-base text-gray-700 leading-relaxed pr-16">先生はodaibaのアプリを通して、各グループの進捗状況をリアルタイムで確認することができます。必要な時には個別のグループに参加してサポートしたりすることができます。</p>
+            <p class="text-base text-gray-700 leading-relaxed pr-16">With odaiba, teachers can watch real-time progress of each student group’s work and join in to help whenever needed. This way students can work together on an assignment and teachers can give help to those who are struggling.</p>
           </div>
         </div>
       </div>
@@ -130,23 +129,26 @@
       <div data-aos="fade-down" class="feature flex mt-8">
         <div class="w-1/2">
           <div class="text pr-8 pt-12">
-            <h4 class="font-black text-3xl mb-4">ワークシートと<br/>レッスンを簡単に作成</h4>
+            <h4 class="font-black text-3xl mb-4">Custom worksheet and<br/>lesson creation for educators</h4>
             <hr class="border w-20 mb-6" style="border-color:#F88436">
-            <p class="text-base text-gray-700 leading-relaxed pr-16">odaibaのアプリで様々な科目のワークシートや宿題を簡単に作成することができます。生徒のニーズに合わせてワークシートの難しさをフレキシブルに調整することが可能です。また、正解を設定することによって自動採点することもできます。</p>
+            <p class="text-base text-gray-700 leading-relaxed pr-16">Our easy-to-use program is flexible enough for teachers of a variety of subjects to use for creating custom worksheets and assignments for students to work on online. Teachers will be able to
+              set the correct answers for the sheets for easy and automatic grading.</p>
           </div>
         </div>
         <div class="w-1/2 relative">
-          <%= image_tag 'images/shape-3.png', class: 'bg-shape absolute', alt: "shape" %>
-          <%= image_tag 'images/feature-3.png', class: 'overlay-image absolute p-12 mt-12', alt: "Teacher using laptop" %>
+          <img class="bg-shape absolute" src="images/shape-3.png" alt="shape">
+          <img class="overlay-image absolute p-12 mt-12" src="images/feature-3.png" alt="">
         </div>
       </div>
+
     </div>
+
   </section>
 
   <!---------------------------------- DEMO ---------------------------------->
 
   <section id="demo" class="demo mb-20">
-    <h2 class="text-4xl font-extrabold text-center mb-4" style="color:#F88436">デモ動画を見る</h2>
+    <h2 class="text-4xl font-extrabold text-center mb-4" style="color:#F88436">Demo</h2>
     <hr class="border w-12 m-auto mb-8" style="border-color:#F88436">
 
     <div class="video">
@@ -160,35 +162,35 @@
   <section id="contact" class="contact mt-20">
 
     <div class="container m-auto p-12">
-      <h2 class="text-3xl text-gray-700 font-extrabold text-center mb-4">お問い合わせ</h2>
+      <h2 class="text-3xl text-gray-700 font-extrabold text-center mb-4">Contact Us</h2>
       <hr class="border border-gray-700 w-12 m-auto mb-6">
-      <p class="text-center text-gray-700">パートナーになりたい方々のご連絡をお待ちしております！</p>
+      <p class="text-center text-gray-700">Got a question? Send us a message below!</p>
 
       <div class="form mt-10">
 
         <form name="contact" class="w-full max-w-lg m-auto" netlify>
           <div class="flex flex-wrap -mx-3 mb-2">
             <div class="w-full md:w-1/2 px-3 mb-3 md:mb-0">
-              <input class="appearance-none block w-full bg-white text-sm text-gray-700 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="名">
+              <input class="appearance-none block w-full bg-white text-sm text-gray-700 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" name="first name" placeholder="First Name">
             </div>
             <div class="w-full md:w-1/2 px-3">
-              <input class="appearance-none block w-full bg-white text-sm text-gray-700 rounded-lg py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="姓">
+              <input class="appearance-none block w-full bg-white text-sm text-gray-700 rounded-lg py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" name="last name" placeholder="Last Name">
             </div>
           </div>
           <div class="flex flex-wrap -mx-3 mb-2">
             <div class="w-full px-3">
-              <input class="appearance-none block w-full bg-white text-sm text-gray-700 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" placeholder="メールアドレス">
+              <input class="appearance-none block w-full bg-white text-sm text-gray-700 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" name="email" placeholder="Email address">
             </div>
           </div>
           <div class="flex flex-wrap -mx-3 mb-6">
             <div class="w-full px-3">
-              <textarea class="appearance-none block w-full bg-white text-sm text-gray-700 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="message" placeholder="メッセージ" rows="10" cols="30"></textarea>
+              <textarea class="appearance-none block w-full bg-white text-sm text-gray-700 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" name="message" placeholder="Message" rows="10" cols="30"></textarea>
             </div>
           </div>
           <div class="flex flex-wrap -mx-3 mb-2">
             <div class="w-full px-3 text-center">
-              <button class="text-sm bg-orange-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded" type="button">
-                送信
+              <button class="text-sm bg-orange-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded" type="submit">
+                Send
               </button>
             </div>
           </div>
@@ -205,20 +207,20 @@
     <div class="flex items-center justify-between">
       <a href="#">
         <div class="logo block w-24">
-          <%= image_tag 'images/odaiba-logo.svg', alt: "logo" %>
+          <img src="images/odaiba-logo.svg" alt="logo">
         </div>
       </a>
 
       <div class="social block">
         <div class="text-sm flex">
           <a href="#" class="block opacity-75 hover:opacity-50 mr-6 w-4">
-            <%= image_tag 'images/facebook.svg', alt: "facebook" %>
+            <img src="images/facebook.svg" alt="facebook">
           </a>
           <a href="#" class="block opacity-75 hover:opacity-50 mr-6 w-4">
-            <%= image_tag 'images/instagram.svg', alt: "instagram" %>
+            <img src="images/instagram.svg" alt="instagram">
           </a>
           <a href="#" class="block opacity-75 hover:opacity-50 mr-6 w-4">
-            <%= image_tag 'images/twitter.svg', alt: "twitter" %>
+            <img src="images/twitter.svg" alt="twitter">
           </a>
         </div>
       </div>
