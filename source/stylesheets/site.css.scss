@@ -60,20 +60,6 @@ a {
   display: none;
 }
 
-// .youtube-video {
-//   @apply .relative .overflow-hidden .w-full .h-auto
-//   padding-bottom: percentage(9/16);
-
-//   iframe {
-//     @apply .absolute .pin-t .pin-l .w-full .h-full;
-//   }
-// }
-
-// .aspect-16x9 {
-//   padding-bottom: 56.25%; // (9 / 16 = 0.5625)
-// }
-
-
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
