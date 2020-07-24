@@ -172,7 +172,7 @@
 
       <div class="form mt-10">
 
-        <form class="w-full max-w-lg m-auto">
+        <form name="contact" class="w-full max-w-lg m-auto" netlify>
           <div class="flex flex-wrap -mx-3 mb-3">
             <div class="w-full md:w-1/2 px-3 md:mb-0">
               <input class="appearance-none block w-full bg-white text-sm text-gray-700 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" name="first name" placeholder="First Name">
@@ -211,7 +211,7 @@
     <div class="flex items-center justify-between">
       <a href="#">
         <div class="logo block w-24">
-          <%= image_tag 'images/odaiba-logo.svg' %>
+          <%= image_tag 'images/odaiba-logo.svg', alt: "logo" %>
         </div>
       </a>
 
@@ -237,6 +237,7 @@
       once: true,
       duration: 600,
     });
+    (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()
   </script>
 </body>
 
