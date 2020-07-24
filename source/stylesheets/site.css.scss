@@ -29,8 +29,8 @@ a {
 /* mobile menu */
 
 .header {
-  background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  // background-color: #fff;
+  // box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -80,6 +80,7 @@ a {
   float: right;
   // position: relative;
   user-select: none;
+  margin-right: 16px;
 }
 
 .header .menu-icon .navicon {
