@@ -18,7 +18,7 @@ a {
   color: rgba(#000, 0.7);
   &:focus,
   &:hover {
-    color: rgba(#000, 0.6);
+    color: #f98436;
   }
 }
 
@@ -52,6 +52,10 @@ a {
   text-decoration: none;
 }
 
+#lang {
+  display: flex;
+  justify-content: center;
+}
 // .header li a:hover,
 // .header .menu-btn:hover {
 //   background-color: #f4f4f4;
@@ -78,7 +82,7 @@ a {
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
-  float: right;
+  // float: right;
   // position: relative;
   user-select: none;
   margin-right: 16px;
@@ -143,14 +147,18 @@ a {
 
 @media (min-width: 48em) {
   .header li {
+    // float: right;
+    display: inline-block;
+  }
+
+  #lang {
+    display: flex;
     float: right;
   }
-  // .header li a {
-  //   padding: 20px 30px;
-  // }
+
   .header .menu {
     clear: none;
-    float: right;
+    // float: left;
     max-height: none;
   }
   .header .menu-icon {
