@@ -52,22 +52,20 @@
             <%= image_tag 'images/odaiba-logo.svg' %>
           </div>
         </a>
-      <div>
         <p class="flex block font-semibold text-gray-900 mr-8" ><%= link_to 'EN', '/', relative: true, class: 'hover:text-gray-700 mr-2' %> | <%= link_to '日本語', '/jp', class: 'hover:text-gray-700 ml-2' %></p>
-      </div>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
           <ul class="menu">
-            <li><a href="#our-cause">
+            <li><a href="#our-cause" class="font-semibold text-gray-900 hover:text-grey-700">
             <%= I18n.t('nav.cause') %>
           </a></li>
-            <li><a href="#features">
+            <li><a href="#features" class="font-semibold text-gray-900 hover:text-grey-700">
             <%= I18n.t('nav.features') %>
           </a></li>
-            <li><a href="#demo">
+            <li><a href="#demo" class="font-semibold text-gray-900 hover:text-grey-700">
             <%= I18n.t('nav.demo') %>
           </a></li>
-            <li><a href="#contact">
+            <li><a href="#contact" class="font-semibold text-gray-900 hover:text-grey-700">
             <%= I18n.t('nav.contact') %>
           </a></li>
           </ul>
@@ -79,7 +77,7 @@
 
   <!---------------------------------- TOP VIEW ---------------------------------->
 
-  <div id="top-view" class="top-view pt-24 md:p-10 lg:h-screen lg:pt-32 lg:p-24">
+  <div id="top-view" class="top-view pt-20 md:p-10 lg:h-screen lg:pt-32 lg:p-24">
     <div class="welcome md:flex md:items-center">
       <div class="order-2 image lg:w-1/2">
         <img src="images/top-image.png" alt="Home Learning">
