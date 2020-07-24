@@ -12,9 +12,9 @@ activate :i18n, mount_at_root: :en, langs: %w[en jp]
 # https://middlemanapp.com/basics/layouts/
 
 # image compression
-activate :imageoptim do |options|
-  options.image_extensions = %w[.png .jpg .gif .svg]
-end
+# activate :imageoptim do |options|
+#   options.image_extensions = %w[.png .jpg .gif .svg]
+# end
 
 # Per-page layout changes
 page '/*.xml', layout: false
