@@ -1,10 +1,4 @@
 // This is where it all goes :)
-
-//wait for DOM to load
-window.addEventListener('load', (event) => {
-  console.log('page is fully loaded');
-});
-
 //navbar
 window.onscroll = () => {
   const nav = document.querySelector('#navbar');
