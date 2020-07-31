@@ -24,6 +24,12 @@ jp:
     progress-b: "先生はodaibaのアプリを通して、各グループの進捗状況をリアルタイムで確認することができます。必要な時には個別のグループに参加してサポートしたりすることができます。"
     custom: "ワークシートと<br/>レッスンを簡単に作成"
     custom-b: "odaibaのアプリで様々な科目のワークシートや宿題を簡単に作成することができます。生徒のニーズに合わせてワークシートの難しさをフレキシブルに調整することが可能です。また、正解を設定することによって自動採点することもできます。"
+  media:
+    title: "odaiba in the media"
+    shimbun: "Kyoto Shimbun Title"
+    nhk: "NHK Video Title"
+    tokyo: "How Le Wagon alumni won the Japan Hackathon and launched a startup"
+    singapore: "Explore A World of Possibilities With Le Wagon"
   demo:
     title: "デモ動画を見る"
   contact:
