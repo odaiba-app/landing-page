@@ -165,49 +165,21 @@
   <h2 class="text-2xl lg:text-3xl font-extrabold text-center mt-10 m-4" style="color:#F88436"><%= I18n.t('media.title') %></h2>
   <hr class="border w-12 m-auto mb-8" style="border-color:#F88436">
   <div class="media-links md:flex w-screen md:justify-center">
-    <div class="media-container my-4 md:my-0">
-      <div>
-        <div class="relative mx-2">
-          <div class="bg-black text-white text-xs rounded py-1 px-4 right-0 bottom-full">
-            <%= I18n.t('media.shimbun') %>
-          </div>
-            <svg class="absolute text-black h-2 w-full left-0 top-full" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon class="fill-current" points="0,0 127.5,127.5 255,0"/></svg>
-        </div>
-      </div>
+    <div class="media-container my-4 md:my-0 tooltip">
       <%= image_tag 'images/shimbun.png', class: 'media-logo h-100 w-100 object-fit', alt: "kyoto shimbun" %>
+        <span class="tooltiptext"><%= I18n.t('media.shimbun') %></span>
     </div>
-    <div class="media-container my-4 md:my-0">
-      <div>
-        <div class="relative mx-2">
-          <div class="bg-black text-white text-xs rounded py-1 px-4 right-0 bottom-full">
-            <%= I18n.t('media.nhk') %>
-          </div>
-            <svg class="absolute text-black h-2 w-full left-0 top-full" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon class="fill-current" points="0,0 127.5,127.5 255,0"/></svg>
-        </div>
-      </div>
+    <div class="media-container my-4 md:my-0 tooltip">
       <%= image_tag 'images/nhk.png', class: 'media-logo h-100 w-100 object-fit', alt: "nhk" %>
+        <span class="tooltiptext"><%= I18n.t('media.nhk') %></span>
     </div>
-    <div class="media-container my-4 md:my-0">
-      <div>
-        <div class="relative mx-2">
-          <div class="bg-black text-white text-xs rounded py-1 px-4 right-0 bottom-full">
-            <%= I18n.t('media.tokyo') %>
-          </div>
-            <svg class="absolute text-black h-2 w-full left-0 top-full" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon class="fill-current" points="0,0 127.5,127.5 255,0"/></svg>
-        </div>
-      </div>
+    <div class="media-container my-4 md:my-0 tooltip">
       <a href="https://www.lewagon.com/blog/alumni-won-japan-hackathon" target="_blank" rel="noopener noreferrer"><%= image_tag 'images/wagon-tokyo.png', class: 'media-logo h-100 w-100 object-fit', alt: "Le Wagon Tokyo" %></a>
+        <span class="tooltiptext"><%= I18n.t('media.tokyo') %></span>
     </div>
-    <div class="media-container my-4 md:my-0">
-      <div>
-        <div class="relative mx-2">
-          <div class="bg-black text-white text-xs rounded py-1 px-4 right-0 bottom-full">
-            <%= I18n.t('media.singapore') %>
-          </div>
-            <svg class="absolute text-black h-2 w-full left-0 top-full" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon class="fill-current" points="0,0 127.5,127.5 255,0"/></svg>
-        </div>
-      </div>
+    <div class="media-container my-4 md:my-0 tooltip">
       <a href="https://www.lewagon.com/blog/explore-a-world-of-possibilities-with-le-wagon" target="_blank" rel="noopener noreferrer"><%= image_tag 'images/wagon-singapore.png', class: 'media-logo h-100 w-100 object-fit', alt: "Le Wagon Singapore" %></a>
+        <span class="tooltiptext"><%= I18n.t('media.singapore') %></span>
     </div>
   </div>
 
