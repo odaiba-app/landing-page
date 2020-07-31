@@ -162,18 +162,26 @@
   </div>
 
   <!---------------------------------- MEDIA ---------------------------------->
+  <div class="body-blackout"></div>
   <h2 class="text-2xl lg:text-3xl font-extrabold text-center mt-10 m-4" style="color:#F88436"><%= I18n.t('media.title') %></h2>
   <hr class="border w-12 m-auto mb-8" style="border-color:#F88436">
   <div class="media-links md:flex w-screen md:justify-center">
     <div class="media-container my-4 md:my-0 tooltip">
-      <button>
+      <button class="popup-trigger" data-popup-trigger="one">
         <%= image_tag 'images/shimbun.png', class: 'media-logo h-100 w-100 object-fit', alt: "kyoto shimbun" %>
       </button>
         <span class="tooltiptext"><%= I18n.t('media.shimbun') %></span>
-
     </div>
+
+    <div class="popup-modal" data-popup-modal="one">
+      <i class="fas fa-2x fa-times text-white bg-primary p-3 popup-modal__close"></i>
+      <h1 class="font-weight-bold">
+        Modal One Title
+      </h1>
+    </div>
+
     <div class="media-container my-4 md:my-0 tooltip">
-      <button>
+      <button class="popup-trigger" data-popup-trigger="two">
         <%= image_tag 'images/nhk.png', class: 'media-logo h-100 w-100 object-fit', alt: "nhk" %>
       </button>
         <span class="tooltiptext"><%= I18n.t('media.nhk') %></span>
