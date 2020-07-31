@@ -164,10 +164,20 @@
   <!---------------------------------- MEDIA ---------------------------------->
   <h2 class="text-2xl lg:text-3xl font-extrabold text-center m-4" style="color:#F88436"><%= I18n.t('media.title') %></h2>
   <hr class="border w-12 m-auto mb-8" style="border-color:#F88436">
-  <%= image_tag 'images/shimbun.png', class: 'media-logo', alt: "kyoto shimbun" %>
-  <%= image_tag 'images/nhk.png', class: 'media-logo', alt: "nhk" %>
-  <%= image_tag 'images/le-wagon-logo.png', class: 'media-logo', alt: "Le Wagon Tokyo" %>
-  <%= image_tag 'images/le-wagon-logo.png', class: 'media-logo', alt: "Le Wagon Singapore" %>
+  <div class="media-links md:flex w-screen justify-center">
+    <div class="media-container">
+      <%= image_tag 'images/shimbun.png', class: 'media-logo h-100 w-100 object-fit', alt: "kyoto shimbun" %>
+    </div>
+    <div class="media-container">
+      <%= image_tag 'images/nhk.png', class: 'media-logo h-100 w-100 object-fit', alt: "nhk" %>
+    </div>
+    <div class="media-container">
+      <%= image_tag 'images/le-wagon-logo.png', class: 'media-logo h-100 w-100 object-fit', alt: "Le Wagon Tokyo" %>
+    </div>
+    <div class="media-container">
+      <%= image_tag 'images/le-wagon-logo.png', class: 'media-logo h-100 w-100 object-fit', alt: "Le Wagon Singapore" %>
+    </div>
+  </div>
 
 
   <!---------------------------------- CONTACT US ---------------------------------->
