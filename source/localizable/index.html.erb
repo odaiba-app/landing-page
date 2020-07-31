@@ -166,11 +166,16 @@
   <hr class="border w-12 m-auto mb-8" style="border-color:#F88436">
   <div class="media-links md:flex w-screen md:justify-center">
     <div class="media-container my-4 md:my-0 tooltip">
-      <%= image_tag 'images/shimbun.png', class: 'media-logo h-100 w-100 object-fit', alt: "kyoto shimbun" %>
+      <button>
+        <%= image_tag 'images/shimbun.png', class: 'media-logo h-100 w-100 object-fit', alt: "kyoto shimbun" %>
+      </button>
         <span class="tooltiptext"><%= I18n.t('media.shimbun') %></span>
+
     </div>
     <div class="media-container my-4 md:my-0 tooltip">
-      <%= image_tag 'images/nhk.png', class: 'media-logo h-100 w-100 object-fit', alt: "nhk" %>
+      <button>
+        <%= image_tag 'images/nhk.png', class: 'media-logo h-100 w-100 object-fit', alt: "nhk" %>
+      </button>
         <span class="tooltiptext"><%= I18n.t('media.nhk') %></span>
     </div>
     <div class="media-container my-4 md:my-0 tooltip">
