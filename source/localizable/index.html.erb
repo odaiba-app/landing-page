@@ -48,7 +48,7 @@
   <div id="top-view" class="top-view pt-20 md:p-10 lg:h-screen lg:pt-32 lg:p-24">
     <div class="welcome md:flex md:items-center">
       <div class="order-2 image lg:w-1/2">
-        <img src="images/top-image.png" alt="Home Learning">
+        <%= image_tag 'images/top-image.png', alt: "Home Learning" %>
       </div>
       <div class="order-1 lg:w-1/2 p-5 lg:pr-20 lg:pt-12">
         <div class="slogan text-2xl lg:text-5xl font-bold mb-10">
@@ -184,6 +184,16 @@
       </button>
         <span class="tooltiptext"><%= I18n.t('media.nhk') %></span>
     </div>
+
+    <div id="yt-modal" class="popup-modal md:overflow-hidden" data-popup-modal="two">
+      <i class="fas fa-2x fa-times text-white bg-primary p-3 popup-modal__close"></i>
+      <section class="embed-container">
+        <div>
+          <iframe id="yt-video" class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/C19VU5YKnc0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+    </div>
+
     <div class="media-container my-4 md:my-0 tooltip">
       <a href="https://www.lewagon.com/blog/alumni-won-japan-hackathon" target="_blank" rel="noopener noreferrer"><%= image_tag 'images/wagon-tokyo.png', class: 'media-logo h-100 w-100 object-fit', alt: "Le Wagon Tokyo" %></a>
         <span class="tooltiptext"><%= I18n.t('media.tokyo') %></span>

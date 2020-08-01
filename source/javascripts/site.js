@@ -7,14 +7,17 @@ window.onscroll = () => {
 
 //modal
 const modalTriggers = document.querySelectorAll('.popup-trigger');
-console.log(modalTriggers);
 const modalCloseTrigger = document.querySelector('.popup-modal__close');
-console.log(modalCloseTrigger);
 const bodyBlackout = document.querySelector('.body-blackout');
+const modalA = document.getElementById('yt-modal');
+// stop video after modal closed
+function stopVideo(modal) {
+  const currentIframe = document.getElementById('yt-video');
+  currentIframe.src = currentIframe.src;
+}
 
 modalTriggers.forEach(trigger => {
   trigger.addEventListener('click', () => {
-    console.log(trigger.dataset)
     const { popupTrigger } = trigger.dataset
     const popupModal = document.querySelector(`[data-popup-modal="${popupTrigger}"]`)
 
@@ -27,9 +30,18 @@ modalTriggers.forEach(trigger => {
     });
 
     bodyBlackout.addEventListener('click', () => {
-      // TODO: Turn into a function to close modal
       popupModal.classList.remove('is--visible')
       bodyBlackout.classList.remove('is-blacked-out')
+      stopVideo(modalA)
     });
   });
 });
+
+
+// const blackout = document.querySelector('.body-blackout');
+
+// window.onclick = function(event) {
+//     if (blackout.style.display = "none") {
+//         stopVideo(modalA);
+//     }
+// }
