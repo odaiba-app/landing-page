@@ -52,14 +52,18 @@ body {
   max-height: 80vh;
   max-width: 60vw;
   overflow-y: auto;
-  background: url('../images/newspaper.png') no-repeat;
   background-size: cover;
   background-position: center;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
+  width: 100%;
+  height: 100%;
+
+  // position: absolute;
+  // left: 50%;
+  // top: 50%;
   transform: translate(-50%, -50%);
-  // padding: 45px;
   opacity: 0;
   pointer-events: none;
   transition: all 300ms ease-in-out;
