@@ -75,3 +75,10 @@ body {
     cursor: pointer;
   }
 }
+
+.popup-modal i {
+  position: sticky;
+  float: right;
+  top: 0;
+  z-index: 1012;
+}
