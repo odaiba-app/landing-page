@@ -36,12 +36,3 @@ modalTriggers.forEach(trigger => {
     });
   });
 });
-
-
-// const blackout = document.querySelector('.body-blackout');
-
-// window.onclick = function(event) {
-//     if (blackout.style.display = "none") {
-//         stopVideo(modalA);
-//     }
-// }
