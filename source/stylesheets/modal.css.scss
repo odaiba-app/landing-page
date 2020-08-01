@@ -49,11 +49,17 @@ body {
 }
 
 .popup-modal {
+  max-height: 80vh;
+  max-width: 60vw;
+  overflow-y: auto;
+  background: url('../images/newspaper.png') no-repeat;
+  background-size: cover;
+  background-position: center;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding: 45px;
+  // padding: 45px;
   opacity: 0;
   pointer-events: none;
   transition: all 300ms ease-in-out;
