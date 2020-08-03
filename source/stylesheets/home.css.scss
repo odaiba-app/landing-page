@@ -227,15 +227,6 @@ a {
   margin: 0 auto;
 }
 
-@media (min-width: 48em) {
-  .media-links {
-    max-width: 60vw;
-  }
-
-  .media-container {
-  max-width: 15%;
-  }
-}
 
 .tooltip {
   position: relative;
@@ -243,19 +234,17 @@ a {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  max-width: 400px;
+  min-width: 15vw;
   background-color: black;
   color: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 1rem;
-
-  /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  bottom: 100%;
-  left: 50%;
+  bottom: 105%;
   margin-left: -60px;
+  transform: translateX(15%);
 }
 
 .tooltip .tooltiptext::after {
@@ -271,4 +260,20 @@ a {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+@media (min-width: 48em) {
+  .media-links {
+    max-width: 60vw;
+  }
+
+  .media-container {
+    max-width: 15%;
+  }
+}
+
+@media (min-width : 1224px) {
+  .tooltip .tooltiptext {
+    transform: translateX(0%);
+  }
 }

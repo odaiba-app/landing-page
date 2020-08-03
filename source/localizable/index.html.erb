@@ -170,7 +170,7 @@
       <button class="popup-trigger" data-popup-trigger="one">
         <%= image_tag 'images/shimbun.png', class: 'media-logo h-100 w-100 object-fit', alt: "kyoto shimbun" %>
       </button>
-        <span class="tooltiptext"><%= I18n.t('media.shimbun') %></span>
+        <div class="tooltiptext"><%= I18n.t('media.shimbun') %></div>
     </div>
 
     <div class="popup-modal" data-popup-modal="one">
@@ -182,7 +182,7 @@
       <button class="popup-trigger" data-popup-trigger="two">
         <%= image_tag 'images/nhk.png', class: 'media-logo h-100 w-100 object-fit', alt: "nhk" %>
       </button>
-        <span class="tooltiptext"><%= I18n.t('media.nhk') %></span>
+        <div class="tooltiptext"><%= I18n.t('media.nhk') %></div>
     </div>
 
     <div id="yt-modal" class="popup-modal md:overflow-hidden" data-popup-modal="two">
@@ -195,12 +195,12 @@
     </div>
 
     <div class="media-container my-4 md:my-0 tooltip">
-      <a href="https://www.lewagon.com/blog/alumni-won-japan-hackathon" target="_blank"><%= image_tag 'images/wagon-tokyo.png', class: 'media-logo h-100 w-100 object-fit', alt: "Le Wagon Tokyo" %></a>
-        <span class="tooltiptext"><%= I18n.t('media.tokyo') %></span>
+      <a href="https://www.lewagon.com/blog/alumni-won-japan-hackathon" target="_blank"><%= image_tag 'images/wagon-tokyo.png', class: 'media-logo h-100 w-100 object-fit', alt: "Le Wagon Japan" %></a>
+        <div class="tooltiptext"><%= I18n.t('media.japan') %></div>
     </div>
     <div class="media-container my-4 md:my-0 tooltip">
       <a href="https://www.lewagon.com/blog/explore-a-world-of-possibilities-with-le-wagon" target="_blank"><%= image_tag 'images/wagon-singapore.png', class: 'media-logo h-100 w-100 object-fit', alt: "Le Wagon Singapore" %></a>
-        <span class="tooltiptext"><%= I18n.t('media.singapore') %></span>
+        <div class="tooltiptext"><%= I18n.t('media.singapore') %></div>
     </div>
   </div>
 
