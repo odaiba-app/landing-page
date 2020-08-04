@@ -48,7 +48,7 @@
   <div id="top-view" class="top-view pt-20 md:p-10 lg:h-screen lg:pt-32 lg:p-24">
     <div class="welcome md:flex md:items-center">
       <div class="order-2 image lg:w-1/2">
-        <img src="images/top-image.png" alt="Home Learning">
+        <%= image_tag 'images/top-image.png', alt: "Home Learning" %>
       </div>
       <div class="order-1 lg:w-1/2 p-5 lg:pr-20 lg:pt-12">
         <div class="slogan text-2xl lg:text-5xl font-bold mb-10">
@@ -161,9 +161,53 @@
     </section>
   </div>
 
+  <!---------------------------------- MEDIA ---------------------------------->
+  <div class="body-blackout"></div>
+  <h2 class="text-2xl lg:text-3xl font-extrabold text-center mt-10 m-4" style="color:#F88436"><%= I18n.t('media.title') %></h2>
+  <hr class="border w-12 m-auto mb-8" style="border-color:#F88436">
+  <div class="media-links md:flex w-screen md:justify-center">
+    <div class="media-container my-4 md:my-0 tooltip">
+      <button class="popup-trigger" data-popup-trigger="one">
+        <%= image_tag 'images/shimbun.png', class: 'media-logo h-100 w-100 object-fit', alt: "kyoto shimbun" %>
+      </button>
+        <div class="tooltiptext"><%= I18n.t('media.shimbun') %></div>
+    </div>
+
+    <div class="popup-modal" data-popup-modal="one">
+      <i class="fas fa-2x fa-times text-white bg-primary p-3 popup-modal__close"></i>
+      <%= image_tag 'images/newspaper.png', alt: "kyoto shimbun" %>
+    </div>
+
+    <div class="media-container my-4 md:my-0 tooltip">
+      <button class="popup-trigger" data-popup-trigger="two">
+        <%= image_tag 'images/nhk.png', class: 'media-logo h-100 w-100 object-fit', alt: "nhk" %>
+      </button>
+        <div class="tooltiptext"><%= I18n.t('media.nhk') %></div>
+    </div>
+
+    <div id="yt-modal" class="popup-modal md:overflow-hidden" data-popup-modal="two">
+      <i class="fas fa-2x fa-times text-white bg-primary p-3 popup-modal__close"></i>
+      <section class="embed-container">
+        <div>
+          <iframe id="yt-video" class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/C19VU5YKnc0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+    </div>
+
+    <div class="media-container my-4 md:my-0 tooltip">
+      <a href="https://www.lewagon.com/blog/alumni-won-japan-hackathon" target="_blank"><%= image_tag 'images/wagon-tokyo.png', class: 'media-logo h-100 w-100 object-fit', alt: "Le Wagon Japan" %></a>
+        <div class="tooltiptext"><%= I18n.t('media.japan') %></div>
+    </div>
+    <div class="media-container my-4 md:my-0 tooltip">
+      <a href="https://www.lewagon.com/blog/explore-a-world-of-possibilities-with-le-wagon" target="_blank"><%= image_tag 'images/wagon-singapore.png', class: 'media-logo h-100 w-100 object-fit', alt: "Le Wagon Singapore" %></a>
+        <div class="tooltiptext"><%= I18n.t('media.singapore') %></div>
+    </div>
+  </div>
+
+
   <!---------------------------------- CONTACT US ---------------------------------->
 
-  <section id="contact" class="contact mt-20">
+  <section id="contact" class="contact mt-10">
 
     <div class="container m-auto p-12">
       <h2 class="text-3xl text-gray-700 font-extrabold text-center mb-4"><%= I18n.t('contact.title') %></h2>

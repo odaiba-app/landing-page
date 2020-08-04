@@ -24,6 +24,12 @@ en:
     progress-b: "With odaiba, teachers can watch real-time progress of each student group’s work and join in to help whenever needed. This way students can work together on an assignment and teachers can give help to those who are struggling."
     custom: "Custom worksheet and<br/>lesson creation for educators"
     custom-b: "Our easy-to-use program is flexible enough for teachers of a variety of subjects to use for creating custom worksheets and assignments for students to work on online. Teachers will be able to set the correct answers for the sheets for easy and automatic grading."
+  media:
+    title: "odaiba in the media"
+    shimbun: "Remote Working Comfortably"
+    nhk: "Making Kyoto an entrepreneurial base"
+    japan: "How Le Wagon alumni won the Japan Hackathon and launched a startup"
+    singapore: "Explore A World of Possibilities With Le Wagon"
   demo:
     title: "Demo"
   contact:
