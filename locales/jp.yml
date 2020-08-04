@@ -25,11 +25,11 @@ jp:
     custom: "ワークシートと<br/>レッスンを簡単に作成"
     custom-b: "odaibaのアプリで様々な科目のワークシートや宿題を簡単に作成することができます。生徒のニーズに合わせてワークシートの難しさをフレキシブルに調整することが可能です。また、正解を設定することによって自動採点することもできます。"
   media:
-    title: "odaiba in the media"
+    title: "メディア"
     shimbun: "リモートワーク快適に"
     nhk: "京都を起業拠点に"
-    japan: "How Le Wagon alumni won the Japan Hackathon and launched a startup"
-    singapore: "Explore A World of Possibilities With Le Wagon"
+    japan: "Le Wagon 卒業生がジャパンハッカソンで優勝しスタートアップを立ち上げ"
+    singapore: "Le Wagonで可能性を探る"
   demo:
     title: "デモ動画を見る"
   contact:
