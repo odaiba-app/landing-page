@@ -1,5 +1,5 @@
 /*colors*/
-$orange: #F9975F;
+$orange: #F88436;
 
 nav .container {
   max-width: 1280px;
@@ -25,4 +25,10 @@ a {
   }
 }
 
+.orange {
+  color: $orange;
+}
 
+.orange-border {
+  border-color: $orange;
+}
