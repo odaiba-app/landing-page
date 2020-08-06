@@ -1,0 +1,55 @@
+#navbar {
+  z-index: 1;
+}
+
+.arrow {
+  color: #F88436;
+  .fas {
+    font-size: 1.2rem;
+  }
+}
+
+.top-view {
+  background-image: url(../images/top-shape.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.top-view .CTA input {
+  box-shadow: 0px 0px 8px rgba(248, 132, 54, 0.49);
+}
+
+#features .content {
+  width: 960px;
+  margin: 20px auto;
+}
+.contact {
+  background-color: $yellow;
+}
+
+.typeform-share {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #F9975F;
+  color: white;
+  cursor: pointer;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0;
+  height: 50px;
+  padding: 0px 33px;
+  border-radius: 25px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &:hover {
+    color: white;
+  }
+}
