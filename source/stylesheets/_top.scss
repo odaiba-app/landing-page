@@ -49,4 +49,7 @@
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  &:hover {
+    color: white;
+  }
 }
