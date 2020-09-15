@@ -6,7 +6,7 @@ activate :autoprefixer do |prefix|
 end
 
 # activate localization
-activate :i18n, mount_at_root: false, langs: %w[en jp]
+activate :i18n, mount_at_root: :en, langs: %w[en jp]
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
