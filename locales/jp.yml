@@ -38,7 +38,7 @@ jp:
     title: "お問い合わせ"
     message: "パートナーになりたい方々のご連絡をお待ちしております！"
     send: "送信"
-    firstname: "姓" #b/c switching order for Japanese
-    surname: "名"
+    firstname: "名"
+    surname: "姓"
     email: "メールアドレス"
     inquiry: "お問い合わせ内容"
