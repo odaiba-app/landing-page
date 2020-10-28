@@ -38,3 +38,10 @@ en:
     title: "Contact Us"
     message: "Got a question? Send us a message below!"
     send: "Send"
+    firstname: "First Name"
+    surname: "Last Name"
+    email: "Email address"
+    inquiry: "Message"
+
+
+
