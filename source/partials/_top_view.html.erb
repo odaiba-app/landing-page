@@ -1,0 +1,15 @@
+<div id="top-view" class="top-view pt-20 md:p-10 lg:h-screen lg:pt-32 lg:p-24">
+    <div class="welcome md:flex md:items-center">
+      <div class="order-2 image lg:w-1/2 object-cover">
+        <%= image_tag 'images/top-image.png', alt: "Home Learning", class: 'w-full' %>
+      </div>
+      <div class="order-1 lg:w-1/2 p-5 lg:pr-20 lg:pt-12">
+        <div class="slogan text-2xl lg:text-5xl font-bold mb-10">
+          <%= I18n.t('top.slogan') %>
+        </div>
+        <div class="CTA text-center md:text-left">
+         <a class="typeform-share button" href="https://form.typeform.com/to/SksVjAuk" data-mode="popup" target="_blank"><%= I18n.t('top.button') %></a>
+        </div>
+      </div>
+    </div>
+  </div>

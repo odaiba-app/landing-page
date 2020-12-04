@@ -1,0 +1,49 @@
+<div class="body-blackout"></div>
+  <h2 class="orange text-2xl lg:text-3xl font-extrabold text-center mt-10 m-4"><%= I18n.t('media.title') %></h2>
+  <hr class="orange-border border w-12 m-auto mb-8">
+  <div class="media-links md:flex w-screen md:justify-center">
+    <div class="media-container my-4 md:my-0 tooltip">
+      <button class="popup-trigger" data-popup-trigger="one">
+        <%= image_tag 'images/shimbun.png', class: 'media-logo h-100 w-100 object-fit', alt: "kyoto shimbun" %>
+      </button>
+        <div class="tooltiptext"><%= I18n.t('media.shimbun') %></div>
+    </div>
+
+    <div class="popup-modal" data-popup-modal="one">
+      <i class="fas fa-2x fa-times text-white bg-primary p-3 popup-modal__close"></i>
+      <%= image_tag 'images/newspaper.jpg', alt: "kyoto shimbun" %>
+    </div>
+
+    <div class="media-container my-4 md:my-0 tooltip">
+      <button class="popup-trigger" data-popup-trigger="two">
+        <%= image_tag 'images/nhk.png', class: 'media-logo h-100 w-100 object-fit', alt: "nhk" %>
+      </button>
+        <div class="tooltiptext"><%= I18n.t('media.nhk') %></div>
+    </div>
+
+    <div id="yt-modal" class="popup-modal md:overflow-hidden" data-popup-modal="two">
+      <i class="fas fa-2x fa-times text-white bg-primary p-3 popup-modal__close"></i>
+      <section class="embed-container">
+        <div>
+          <iframe id="yt-video" class="mx-auto" width="560" height="315" src="https://www.youtube.com/embed/C19VU5YKnc0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+    </div>
+
+    <div class="media-container my-4 md:my-0 tooltip">
+      <a href="https://www.lewagon.com/blog/alumni-won-japan-hackathon" target="_blank"><%= image_tag 'images/wagon-tokyo.png', class: 'media-logo h-100 w-100 object-fit', alt: "Le Wagon Japan" %></a>
+        <div class="tooltiptext"><%= I18n.t('media.japan') %></div>
+    </div>
+    <div class="media-container my-4 md:my-0 tooltip">
+      <a href="https://www.lewagon.com/blog/explore-a-world-of-possibilities-with-le-wagon" target="_blank"><%= image_tag 'images/wagon-singapore.png', class: 'media-logo h-100 w-100 object-fit', alt: "Le Wagon Singapore" %></a>
+        <div class="tooltiptext"><%= I18n.t('media.singapore') %></div>
+    </div>
+    <div class="media-container my-4 md:my-0 tooltip">
+      <a href="https://www.sankeibiz.jp/business/news/200813/bsc2008130500007-n1.htm" target="_blank"><%= image_tag 'images/sankei.png', class: 'media-logo h-100 w-100 object-fit', alt: "SankeiBiz Logo" %></a>
+        <div class="tooltiptext"><%= I18n.t('media.sankei') %></div>
+    </div>
+    <div class="media-container my-4 md:my-0 tooltip">
+      <a href="https://grapee.jp/en/147757" target="_blank"><%= image_tag 'images/grapee.png', class: 'media-logo h-100 w-100 object-fit', alt: "Grapee Logo" %></a>
+        <div class="tooltiptext"><%= I18n.t('media.grape') %></div>
+    </div>
+  </div>
